@@ -336,7 +336,7 @@
 
                 Swal.fire({
                 type: 'error',
-                //title: 'Oops...',
+                title: 'Oops...',
                 text: 'Rellene todos los campos del detalle de la venta',
 
                 })

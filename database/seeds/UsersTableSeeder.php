@@ -1,5 +1,7 @@
 <?php
 
+use App\Cargo;
+use App\Departamento;
 use Illuminate\Database\Seeder;
 use Caffeinated\Shinobi\Models\Role;
 use App\User;
@@ -24,6 +26,19 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => 'secret'
         ]);
+        Cargo::create([
+            'nombre' => 'ADMINISTRADOR',
+            'descripcion' => 'ADMINISTRADOR',
+            'estatus' => '1'
+        ]);
+        Departamento::create([
+            'nombre' => 'INFORMATICA',
+            'descripcion' => 'INFORMATICA',
+            'estatus' => '1'
+        ]);
+
+        
+
 
 
         // factory(App\User::class, 9)->create();
